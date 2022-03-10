@@ -62,8 +62,8 @@ resource "aws_launch_configuration" "was-launch-configuration" {
             #!/bin/bash
             amazon-linux-extras install -y java-openjdk11
             wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.59/bin/apache-tomcat-9.0.59.tar.gz
-            tar xvf apache-tomcat-8.5.75.tar.gz
-            ./apache-tomcat-8.5.75/bin/startup.sh
+            tar xvf apache-tomcat-9.0.59.tar.gz
+            ./apache-tomcat-9.0.59/bin/startup.sh
             sudo yum install ruby -y
             wget https://aws-codedeploy-ap-northeast-2.s3.amazonaws.com/latest/install
             chmod +x ./install
