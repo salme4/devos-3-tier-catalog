@@ -61,7 +61,7 @@ resource "aws_launch_configuration" "was-launch-configuration" {
   user_data = <<-EOF
             #!/bin/bash
             amazon-linux-extras install -y java-openjdk11
-            wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.75/bin/apache-tomcat-8.5.75.tar.gz
+            wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.59/bin/apache-tomcat-9.0.59.tar.gz
             tar xvf apache-tomcat-8.5.75.tar.gz
             ./apache-tomcat-8.5.75/bin/startup.sh
             sudo yum install ruby -y
